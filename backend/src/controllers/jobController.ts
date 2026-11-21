@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
-import Job from '../models/Job';
-import Application from '../models/Application';
+import type { Request, Response } from 'express';
+import Job from '../models/Job.js';
+import Application from '../models/Application.js';
 
 interface AuthRequest extends Request { user?: any; }
 

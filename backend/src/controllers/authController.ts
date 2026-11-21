@@ -1,15 +1,15 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import User from '../models/User.ts';
-import Student from '../models/Student.ts';
-import Company from '../models/Company.ts';
+import User from '../models/User.js';
+import Student from '../models/Student.js';
+import Company from '../models/Company.js';
 
 // In-memory blacklist (Use Redis in production for persistence)
 export const tokenBlacklist = new Set<string>();
 
-import generateToken from '../utils/generateToken.ts';
-import { hashPassword, comparePassword } from '../utils/passwordEncryption.ts';
+import generateToken from '../utils/generateToken.js';
+import { hashPassword, comparePassword } from '../utils/passwordEncryption.js';
 
 export const register = async (req: Request, res: Response): Promise<Response> => {
   const { name, email, password, role, ...profileData } = req.body;

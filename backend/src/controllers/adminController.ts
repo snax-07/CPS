@@ -1,8 +1,8 @@
-import { Request, Response } from 'express';
-import User from '../models/User.ts';
-import Student from '../models/Student.ts';
-import Job from '../models/Job.ts';
-import Application from '../models/Application.ts';
+import { type Request, type Response } from 'express';
+import User from '../models/User.js';
+import Student from '../models/Student.js';
+import Job from '../models/Job.js';
+import Application from '../models/Application.js';
 
 export const getSystemStats = async (req: Request, res: Response): Promise<Response> => {
   try {

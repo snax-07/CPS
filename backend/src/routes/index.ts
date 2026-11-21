@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import authRoutes from './authRoutes.ts';
-import studentRoutes from './studentRoutes.ts';
-import jobRoutes from './jobRoutes.ts';
-import companyRoutes from './companyRoutes.ts';
-import { authenticate } from '../middleware/authMiddleware.ts';
+import authRoutes from './authRoutes.js';
+import studentRoutes from './studentRoutes.js';
+import jobRoutes from './jobRoutes.js';
+import companyRoutes from './companyRoutes.js';
+import { authenticate } from '../middleware/authMiddleware.js';
 
 const router = Router();
 

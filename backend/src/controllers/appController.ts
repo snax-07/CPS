@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
-import Application from '../models/Application';
-import Job from '../models/Job';
+import { type Request, type Response } from 'express';
+import Application from '../models/Application.js';
+import Job from '../models/Job.js';
 
 interface AuthRequest extends Request { user?: any }
 export const applyToJob = async (req: Request, res: Response): Promise<Response> => {

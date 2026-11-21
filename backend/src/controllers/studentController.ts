@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
-import Student from '../models/Student';
-import User from '../models/User.ts';
+import type { Request, Response } from 'express';
+import Student from '../models/Student.js';
+import User from '../models/User.js';
 
 interface AuthRequest extends Request { user?: any; }
 

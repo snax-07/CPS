@@ -1,7 +1,7 @@
-import { Request, Response } from 'express';
-import Company from '../models/Company.ts';
-import Job from '../models/Job.ts';
-import Application from '../models/Application.ts';
+import type { Request, Response } from 'express';
+import Company from '../models/Company.js';
+import Job from '../models/Job.js';
+import Application from '../models/Application.js';
 import mongoose from 'mongoose';
 
 interface AuthRequest extends Request { user?: any; }

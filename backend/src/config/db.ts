@@ -1,4 +1,4 @@
-import { IdbMetadata } from '../types/dbModel.ts';
+import { type IdbMetadata } from '../types/dbModel.js';
 import { configDotenv } from 'dotenv';
 import mongoose from 'mongoose';
 

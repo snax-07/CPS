@@ -1,6 +1,6 @@
-import { NextFunction, Router } from 'express';
-import { authenticate, authorize } from '../middleware/authMiddleware.ts';
-import { getAllUsers, deleteUser, getSystemStats, verifyUser } from '../controllers/adminController.ts';
+import { type NextFunction, Router } from 'express';
+import { authenticate, authorize } from '../middleware/authMiddleware.js';
+import { getAllUsers, deleteUser, getSystemStats, verifyUser } from '../controllers/adminController.js';
 
 const router = Router();
 

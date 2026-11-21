@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { Response } from 'express';
+import { type Response } from 'express';
 
 const generateToken = (res: Response, userId: string): string => {
   const token = jwt.sign({ userId }, (process.env.JWT_SECRET as string || "CPS" as string), {

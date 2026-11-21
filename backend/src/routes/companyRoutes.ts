@@ -1,5 +1,5 @@
-import { NextFunction, Router } from 'express';
-import { authenticate, authorize } from '../middleware/authMiddleware.ts';
+import {type  NextFunction, Router } from 'express';
+import { authenticate, authorize } from '../middleware/authMiddleware.js';
 import { 
   updateCompanyProfile, 
   getCompanyProfile, 
@@ -9,7 +9,7 @@ import {
   updateApplicantStatus, 
   getAllCompanyApplications,
   stats
-} from '../controllers/companyController.ts';
+} from '../controllers/companyController.js';
 
 const router = Router();
 

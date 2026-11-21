@@ -1,7 +1,7 @@
-import { NextFunction, Router } from 'express';
-import { createJob, getAllJobs, getJobById, deleteJob, createApplication, updateJob } from '../controllers/jobController.ts';
-import { authorize } from '../middleware/authMiddleware.ts';
-import { applyToJob, getStudentApplications, getMyApplications } from '../controllers/appController.ts';
+import {type  NextFunction, Router } from 'express';
+import { createJob, getAllJobs, getJobById, deleteJob, createApplication, updateJob } from '../controllers/jobController.js';
+import { authorize } from '../middleware/authMiddleware.js';
+import { applyToJob, getStudentApplications, getMyApplications } from '../controllers/appController.js';
 
 const router = Router();
 

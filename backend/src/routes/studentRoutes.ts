@@ -1,6 +1,6 @@
-import { NextFunction, Router } from 'express';
-import { getStudentProfile, createOrUpdateProfile, uploadResume, getStudentProfileById } from '../controllers/studentController.ts';
-import { authenticate, authorize } from '../middleware/authMiddleware.ts';
+import { type NextFunction, Router } from 'express';
+import { getStudentProfile, createOrUpdateProfile, uploadResume, getStudentProfileById } from '../controllers/studentController.js';
+import { authenticate, authorize } from '../middleware/authMiddleware.js';
 import multer from 'multer';
 
 const upload = multer({ dest: 'uploads/' });
